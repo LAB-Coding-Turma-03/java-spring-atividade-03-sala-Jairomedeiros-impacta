@@ -32,7 +32,9 @@ public class CondicionalController {
 			descricao_idade = "Possui menos de 18 anos";
 		 }else{
 			descricao_idade = "Possui 18 anos";
+		 }
 		
+		return ResponseEntity.ok(descricao_idade);
 		
 		return ResponseEntity.ok("APÓS O ALGORITMO COLOCAR O TEXTO/VARIAVEL DE RETORNO AQUI");
 	}
